@@ -10,6 +10,7 @@ public class UtopiasCoins {
     public UtopiasCoins(int totalValue)
     {
         this.totalValue = totalValue;
+        solutionList = new ArrayList<>();
     }
 
     public int getMinNumOfCoin() {
@@ -27,7 +28,7 @@ public class UtopiasCoins {
 
     public ArrayList<CoinBag> getSolution()
     {
-        solutionList = new ArrayList<>();
+        solutionList.clear();
         for (int x=0;;x++)
         {
             if (Coin.getCoin(x)!=null)
